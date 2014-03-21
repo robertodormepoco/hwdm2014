@@ -5,10 +5,10 @@ from itertools import islice
 
 class Homework:	
 	def __init__(self):
-		if len(sys.argv) < 2:
+		if len(argv) < 2:
 			print('usage: python top.py {file}')
 			exit(1)
-		f = open(sys.argv[1])
+		f = open(argv[1])
 		
 		pairs = []
 
@@ -16,7 +16,7 @@ class Homework:
 
 		try:
 			for i, line in enumerate(f):	
-				user_songs = re.findall("\w+", line)
+				user_songs = findall("\w+", line)
 				pairs += list(zip(user_songs[1:], user_songs[2:]))
 
 		except IOError as err:
