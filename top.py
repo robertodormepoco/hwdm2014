@@ -1,7 +1,6 @@
-import re
-import sys
-from collections import Counter
-from collections import defaultdict, OrderedDict
+from re import findall
+from sys import argv
+from collections import defaultdict, OrderedDict, Counter
 from itertools import islice
 
 class Homework:	
